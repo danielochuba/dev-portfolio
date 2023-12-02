@@ -600,7 +600,14 @@ form {
   }
 
   .nav-bar {
-    padding: 10px 0;
+    background: #ffffff;
+    position: relative;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .hambug-menu {
@@ -655,7 +662,7 @@ form {
   }
 
   .header-text {
-    width: 65%;
+    width: 60%;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -737,7 +744,7 @@ form {
   .section-text {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     color: #344563;
     padding: 0;
@@ -778,7 +785,7 @@ form {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    padding: 142px;
+    padding: 74px;
   }
 
   .about {
@@ -824,7 +831,7 @@ form {
 
   .desk-img:hover {
     filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-    border: 1px solid #6070ff;
+    transform: scale(1.5);
   }
 
   .form {
