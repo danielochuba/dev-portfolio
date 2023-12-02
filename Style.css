@@ -434,6 +434,16 @@ header {
   padding: 24px 0 0 12px;
 }
 
+.skill-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  padding: 24px 0 24px 16px;
+  margin: 0;
+}
+
 .role > .skill-name {
   padding: 0;
 }
@@ -471,16 +481,6 @@ header {
   background: #f7f7f9;
   border-radius: 8px;
   padding-left: 14px;
-}
-
-.skill-name {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  padding: 24px 0 24px 16px;
-  margin: 0;
 }
 
 .skill-icon {
