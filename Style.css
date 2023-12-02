@@ -828,9 +828,13 @@ form {
     gap: 27px;
   }
 
+  .desk-img {
+    transition: transform 1s ease;
+  }
+
   .desk-img:hover {
     filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-    transform: scale(1.5);
+    transform: scale(1.05);
   }
 
   .form {
