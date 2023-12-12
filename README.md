@@ -67,7 +67,7 @@
 
 
 
-- [Live Demo Link](https://danielochuba.github.io/portfolio/)
+- [Live Demo Link](https://danielochuba.github.io/dev-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,11 +125,6 @@ To run the project, execute the following command:
 - GitHub: [@githubhandle](https://github.com/danielochuba)
 - Twitter: [@twitterhandle](https://twitter.com/ochuba_daniel)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/daniel-ochuba-614572238)
-
-👤 **Author2**
-- GitHub: [@GardimyCharles](https://github.com/Gardimy/Application-deploy)
-- Twitter: [@gardyelontiga45](https://twitter.com/gardyelontiga45)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gardimy-charles/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
