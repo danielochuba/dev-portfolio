@@ -7,6 +7,39 @@
   box-sizing: border-box;
 }
 
+@keyframes appearFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.appear-from-bottom {
+  animation: appearFromBottom 0.5s ease-out;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end) forwards, appear 0.5s 2s forwards;
+}
+
 body {
   margin: 0;
   background-color: #e5e5e5;
@@ -136,9 +169,9 @@ header {
 }
 
 .header-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 29px;
   color: #344563;
   margin: 0;
 }
@@ -148,9 +181,9 @@ header {
   height: 27px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
+
 }
 
 .connect {
@@ -179,17 +212,18 @@ header {
 }
 
 .work-section {
+  padding-top: 60px;
   display: grid;
   grid-template-rows: auto auto auto auto;
-  row-gap: 88px;
-  padding: 114px 24px;
+  row-gap: 20px;
+  width: 94%;
+  margin: 10px auto;
 }
 
 .section-label,
 .desk-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 16px;
   gap: 12px;
   background-color: #fff;
@@ -208,20 +242,20 @@ header {
 }
 
 .popup-img {
-  width: 100%;
+  width: 40%;
 }
 
 .label-inside {
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
 }
 
 .section-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
   line-height: 44px;
   color: #172b4d;
   margin: 0;
@@ -266,16 +300,16 @@ header {
 
 .section-text {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8em;
+  line-height: 20px;
   color: #344563;
   margin: 0;
 }
 
 .section-skills {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   list-style: none;
@@ -298,14 +332,16 @@ header {
 }
 
 .btn-text {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 0.8rem;
   line-height: 24px;
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 12px;
+  padding: 5px 8px;
   color: #396df2;
   background: transparent;
   border-radius: 8px;
@@ -315,13 +351,14 @@ header {
 }
 
 .btn-text:hover {
-  background-color: #6070ff;
+  background-color: #acb1dd;
   color: #fff;
-  transform: translate(10px, 6px);
+  transform: scale(1);
+  border: none;
 }
 
 .btn-text:active {
-  background-color: #2230d2;
+  background-color: #848aca;
   color: #fff;
   transition: all 0.4s ease-in-out;
 }
@@ -335,14 +372,15 @@ header {
   transform: translate(-50%, -50%);
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  overflow-y: auto;
   z-index: 1000;
+  backdrop-filter: blur(1px);
 }
 
 .popUp-content {
   background-color: #fff;
   width: 90%;
-  margin: 16px auto 0 auto;
+  height: fit-content;
+  margin: 20% auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
@@ -354,11 +392,13 @@ header {
 .deskColum {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
 
 .cardParaMob {
   display: block;
+  width: 95%;
 }
 
 .cardParaDesk {
@@ -375,6 +415,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 12px;
+  justify-content: center;
 }
 
 .popTitle {
@@ -558,11 +599,15 @@ form {
   border-radius: 8px;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 24px;
-  color: #b3bac5;
+  color: #000000;
   padding: 2%;
   width: 100%;
+}
+
+.form-textarea:active {
+  color: #172b4d;
 }
 
 .form-button {
@@ -592,6 +637,8 @@ form {
   border-radius: 8px;
   color: #fff;
 }
+
+/* DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN  */
 
 @media (min-width: 768px) {
   nav {
@@ -742,9 +789,10 @@ form {
   }
 
   .section-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 0.9rem;
     line-height: 24px;
     color: #344563;
     padding: 0;
@@ -759,6 +807,17 @@ form {
   .popUp-content {
     width: 80%;
     margin: 50px auto 50px auto;
+    height: 88vh;
+  }
+
+  .popup-img {
+    width: 40%;
+  }
+
+  .pop-top {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
   }
 
   .deskColum {
