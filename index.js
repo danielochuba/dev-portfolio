@@ -18,7 +18,6 @@ function toggleMenu() {
     menuIcon.style.display = 'none';
   }
 }
-
 hamburger.addEventListener('click', toggleMenu);
 
 menuItems.forEach(
@@ -45,7 +44,7 @@ const workCards = [
     dot: './img/Counter.png',
     class: 'section-label',
     para1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  specimen book.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  specimen book.",
     para2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     imageMob: 'Images/Snapshoot1.png',
@@ -60,7 +59,7 @@ const workCards = [
     dot: './img/Counter.png',
     class: 'desk-content',
     para1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     para2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     imageMob: 'Images/Snapshoot2.png',
@@ -75,7 +74,7 @@ const workCards = [
     dot: './img/Counter.png',
     class: 'section-label',
     para1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    para: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     para2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     imageMob: 'Images/Snapshoot3.png',
@@ -90,7 +89,7 @@ const workCards = [
     dot: './img/Counter.png',
     class: 'desk-content',
     para1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and. It has survived not only five centuries.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and. It has survived not only five centuries.",
     para2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     imageMob: 'Images/Snapshoot4.png',
@@ -135,6 +134,7 @@ const popUp = document.getElementById('popUp');
 
 seeProject.forEach((item) => {
   item.addEventListener('click', () => {
+    body.classList.add('none-scroll');
     const name = parseInt(item.getAttribute('name'), 10);
 
     const card = workCards.filter((it) => {
@@ -145,47 +145,43 @@ seeProject.forEach((item) => {
     });
 
     popUp.innerHTML = `
-<div class="popUp-content">
-<div class="sectionLabel">
+    <div class="popUp-content">
+      <div class="sectionLabel">
 
-<div class="label-inside">
-<div class="popTitle">
-<h2 class="section-title">${card[0].title}</h2>
-<img class="crossblack" src="./images/crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide')">
-</div>
-<div class="section-options">
-<h3 class="optionBold">${card[0].canopy[0]}</h3>
-<span class="dot"></span>
-<h3 class="options">${card[0].canopy[1]}</h3>
-<span class="dot"></span>
-<h3 class="options">${card[0].canopy[2]}</h3>
-</div>
-<img class="portfolios" src=${card[0].imageMob} alt="card1">
-<img class="desk-img popup-img" src=${card[0].imageDesk} alt="card1">
-<div class="deskColum">
-<p class="section-text cardParaMob">${card[0].para}</p>
-<p class="section-text cardParaDesk">${card[0].para2}</p>
-<div class="sectionFlex">
-<ul class="section-skills">
-<li class="skills">${card[0].tech[0]}</li>
-<li class="skills">${card[0].tech[1]}</li>
-<li class="skills">${card[0].tech[2]}</li>
-</ul>
-<ul class="section-skills">
-<li class="skills cardParaDesk">${card[0].tech[3]}</li>
-<li class="skills cardParaDesk">${card[0].tech[4]}</li>
-<li class="skills cardParaDesk">${card[0].tech[5]}</li>
-</ul>
-<div class="borderPop"></div>
-<div class="buttonPop">
-<a href="${card[0].live}" class="btn-text" name="1">See live <img class="imgButton" src="./images/live.png" alt="live" width="24"></a>
-<a href="${card[0].source}" class="btn-text" name="1">See Source <img class="imgButton" src="./images/IconGitHub.png" alt="IconGitHub" width="24"></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+        <div class="label-inside">
+          <div class="popTitle">
+            <h2 class="section-title">${card[0].title}</h2>
+            <img class="crossblack" src="./images/crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide'),body.classList.remove('none-scroll')">
+          </div>
+          <div class="section-options">
+            <h3 class="optionBold">${card[0].canopy[0]}</h3>
+            <span class="dot"></span>
+            <h3 class="options">${card[0].canopy[1]}</h3>
+            <span class="dot"></span>
+            <h3 class="options">${card[0].canopy[2]}</h3>
+          </div>
+          <div class="pop-top">
+            <img class="portfolios" src=${card[0].imageMob} alt="card1">
+            <img class="desk-img popup-img" src=${card[0].imageDesk} alt="card1">
+            <p class="section-text cardParaDesk">${card[0].para2}</p>
+          </div>
+            <div class="deskColum">
+              <p class="section-text cardParaMob">${card[0].description}</p>
+             
+              <div class="sectionFlex">
+                <ul class="section-skills">
+                ${card[0].tech.map((it) => `<li class="skills">${it}</li>`).join('')}
+                </ul>
+                <div class="borderPop"></div>
+                <div class="buttonPop">
+                  <a href="${card[0].live}" class="btn-text" name="1">See live <img class="imgButton" src="./images/live.png" alt="live" width="24"></a>
+                  <a href="${card[0].source}" class="btn-text" name="1">See Source <img class="imgButton" src="./images/IconGitHub.png" alt="IconGitHub" width="24"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
 `;
     popUp.classList.toggle('hide');
   });
