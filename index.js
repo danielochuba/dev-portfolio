@@ -18,6 +18,7 @@ function toggleMenu() {
     menuIcon.style.display = 'none';
   }
 }
+
 hamburger.addEventListener('click', toggleMenu);
 
 menuItems.forEach(
@@ -46,7 +47,7 @@ const workCards = [
     para1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and  specimen book.",
     para2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'github', 'ruby', 'Bootstraps'],
     imageMob: 'Images/Snapshoot1.png',
     imageDesk: 'Images/Desktop1.png',
     live: '#',
@@ -130,11 +131,12 @@ workCards.forEach((item2) => {
 sectionLabel.innerHTML += '<div id="popUp" class="popUp hide"></div>';
 
 const seeProject = document.querySelectorAll('.btn-text');
+
 const popUp = document.getElementById('popUp');
 
 seeProject.forEach((item) => {
   item.addEventListener('click', () => {
-    body.classList.add('none-scroll');
+    popUp.classList.add('flex');
     const name = parseInt(item.getAttribute('name'), 10);
 
     const card = workCards.filter((it) => {
@@ -151,7 +153,8 @@ seeProject.forEach((item) => {
         <div class="label-inside">
           <div class="popTitle">
             <h2 class="section-title">${card[0].title}</h2>
-            <img class="crossblack" src="./images/crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide'),body.classList.remove('none-scroll')">
+            <img class="crossblack" src="./images/crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide'),body.classList.remove('none-scroll'),
+            popUp.classList.remove('flex')">
           </div>
           <div class="section-options">
             <h3 class="optionBold">${card[0].canopy[0]}</h3>
