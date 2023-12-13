@@ -153,7 +153,7 @@ seeProject.forEach((item) => {
         <div class="label-inside">
           <div class="popTitle">
             <h2 class="section-title">${card[0].title}</h2>
-            <img class="crossblack" src="./images/crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide'),body.classList.remove('none-scroll'),
+            <img class="crossblack" src="./crossblack.png" alt="crossblack" onclick="popUp.classList.toggle('hide'),body.classList.remove('none-scroll'),
             popUp.classList.remove('flex')">
           </div>
           <div class="section-options">
@@ -177,8 +177,8 @@ seeProject.forEach((item) => {
                 </ul>
                 <div class="borderPop"></div>
                 <div class="buttonPop">
-                  <a href="${card[0].live}" class="btn-text" name="1">See live <img class="imgButton" src="./images/live.png" alt="live" width="24"></a>
-                  <a href="${card[0].source}" class="btn-text" name="1">See Source <img class="imgButton" src="./images/IconGitHub.png" alt="IconGitHub" width="24"></a>
+                  <a href="${card[0].live}" class="btn-text" name="1">See live <img class="imgButton" src="./live.png" alt="live" width="24"></a>
+                  <a href="${card[0].source}" class="btn-text" name="1">See Source <img class="imgButton" src="./IconGitHub.png" alt="IconGitHub" width="24"></a>
                 </div>
               </div>
             </div>
