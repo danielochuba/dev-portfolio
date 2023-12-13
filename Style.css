@@ -311,6 +311,7 @@ header {
   margin: 0;
   gap: 8px;
   padding-left: 0;
+  justify-content: center;
 }
 
 .skills {
@@ -840,6 +841,7 @@ form {
   .about-section {
     display: flex;
     flex-direction: row;
+    text-align: center;
     gap: 25px;
     padding: 74px;
   }
