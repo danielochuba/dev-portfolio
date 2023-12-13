@@ -122,7 +122,7 @@ workCards.forEach((item2) => {
 <li class="skills">${item2.tech[1]}</li>
 <li class="skills">${item2.tech[2]}</li>
 </ul>
-<a href="javascript:void(0)" class="btn-text" name="${item2.id}">See Project</a>
+<a href="javascript:void(0)" class="btn-text see-project" name="${item2.id}">See Project</a>
 </div>
 </div>
 `;
@@ -130,7 +130,7 @@ workCards.forEach((item2) => {
 
 sectionLabel.innerHTML += '<div id="popUp" class="popUp hide"></div>';
 
-const seeProject = document.querySelectorAll('.btn-text');
+const seeProject = document.querySelectorAll('.see-project');
 
 const popUp = document.getElementById('popUp');
 
