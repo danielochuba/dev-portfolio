@@ -110,6 +110,7 @@ body {
 }
 
 .mobile-menu {
+  display: block;
   position: fixed;
   transform: translateY(-100%);
   transition: transform 0.2s;
@@ -639,6 +640,14 @@ form {
   color: #fff;
 }
 
+.hide-desktop {
+  display: none;
+}
+
+.hide-mobile {
+  display: block;
+}
+
 /* DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN  */
 
 @media (min-width: 768px) {
@@ -658,6 +667,10 @@ form {
   }
 
   .hambug-menu {
+    display: none;
+  }
+  
+  .mobile-menu{
     display: none;
   }
 
@@ -718,7 +731,6 @@ form {
   }
 
   .work-section {
-    padding: 142px;
     gap: 142px;
   }
 
@@ -738,7 +750,7 @@ form {
 
   .desk-img {
     display: block;
-    width: 100%;
+    width: 58%;
     transition: transform 1s ease;
   }
 
@@ -753,8 +765,8 @@ form {
 
   .section-title {
     font-style: normal;
+    font-size: 2.5rem;
     font-weight: 700;
-    font-size: 40px;
     line-height: 52px;
     color: #091e42;
   }
@@ -807,8 +819,6 @@ form {
 
   .popUp-content {
     width: 80%;
-    margin: 50px auto 50px auto;
-    height: 88vh;
   }
 
   .popup-img {
@@ -833,6 +843,8 @@ form {
 
   .cardParaDesk {
     display: block;
+    font-size: 80%;
+    line-height: 29px;
   }
 
   .sectionFlex {
@@ -925,6 +937,14 @@ form {
   .form-textarea:hover {
     transform: translate(10px);
   }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
 }
 
 .none-scroll {
@@ -935,4 +955,12 @@ form {
   line-height: 29px;
   font-weight: 400;
   font-size: 1.1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.column {
+  flex-direction: column;
 }
