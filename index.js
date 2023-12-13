@@ -137,6 +137,7 @@ const popUp = document.getElementById('popUp');
 seeProject.forEach((item) => {
   item.addEventListener('click', () => {
     popUp.classList.add('flex');
+    body.classList.add('none-scroll');
     const name = parseInt(item.getAttribute('name'), 10);
 
     const card = workCards.filter((it) => {
