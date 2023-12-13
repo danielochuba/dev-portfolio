@@ -187,7 +187,6 @@ header {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-
 }
 
 .connect {
@@ -298,12 +297,13 @@ header {
 }
 
 .section-text {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 0.8em;
-  line-height: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 23px;
   color: #344563;
   margin: 0;
+  text-align: center;
 }
 
 .section-skills {
@@ -929,4 +929,10 @@ form {
 
 .none-scroll {
   overflow: hidden;
+}
+
+.bold {
+  line-height: 29px;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
