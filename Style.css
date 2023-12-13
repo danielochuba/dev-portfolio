@@ -640,6 +640,18 @@ form {
   color: #fff;
 }
 
+.footer {
+  display: flex;
+  padding: 1%;
+  border-radius: 20px; 
+}
+
+.footer > code {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
 .hide-desktop {
   display: none;
 }
@@ -651,6 +663,7 @@ form {
 /* DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN -- DESKTOP SCREEN  */
 
 @media (min-width: 768px) {
+
   nav {
     padding: 0 143px 48px 143px;
   }
