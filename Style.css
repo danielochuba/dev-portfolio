@@ -881,6 +881,7 @@ form {
   .skill-lists {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .skill-item {
