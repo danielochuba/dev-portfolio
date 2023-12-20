@@ -100,6 +100,7 @@ const workCards = [
   },
 ];
 
+// HANDLES PROJECTS DISPLAY
 const sectionLabel = document.getElementById('work');
 
 workCards.forEach((item2) => {
@@ -128,6 +129,8 @@ workCards.forEach((item2) => {
 `;
 });
 
+// HANDLES MODAL POPUP
+
 sectionLabel.innerHTML += '<div id="popUp" class="popUp hide"></div>';
 
 const seeProject = document.querySelectorAll('.see-project');
@@ -139,7 +142,6 @@ seeProject.forEach((item) => {
     popUp.classList.add('flex');
     body.classList.add('none-scroll');
     const name = parseInt(item.getAttribute('name'), 10);
-
     const card = workCards.filter((it) => {
       if (it.id === name) {
         return it;
@@ -204,3 +206,21 @@ seeProject.forEach((item) => {
     popUp.classList.toggle('hide');
   });
 });
+
+// HANDLES DROP DOWN
+
+const arrows = document.querySelectorAll('.arrow');
+
+const handleArrrowClick = (arrow) => {
+  arrow.addEventListener('click', (event) => {
+    event.stopPropagation();
+    arrow.classList.toggle('down');
+
+    const name = arrow.getAttribute('name');
+
+    const dropDown = document.querySelector(`.${name}`);
+    dropDown.classList.toggle('hide');
+  });
+};
+
+arrows.forEach(handleArrrowClick);

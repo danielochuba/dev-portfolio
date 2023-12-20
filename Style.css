@@ -211,10 +211,6 @@ header {
   list-style: none;
 }
 
-.hide {
-  display: none;
-}
-
 .work-section {
   padding-top: 60px;
   display: grid;
@@ -497,21 +493,18 @@ header {
   padding: 5px;
   margin-right: 10px;
   cursor: pointer;
-}
-
-.right {
-  transform: rotate(315deg);
   -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
 }
 
 .down {
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .right {
-  transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .skill-lists {
@@ -982,4 +975,9 @@ form {
 
 .column {
   flex-direction: column;
+}
+
+
+.hide {
+  display: none;
 }
