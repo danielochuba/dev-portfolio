@@ -474,7 +474,6 @@ header {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  padding: 24px 0 0 12px;
 }
 
 .skill-name {
@@ -497,6 +496,12 @@ header {
   display: block;
   padding: 5px;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.right {
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
 }
 
 .down {
