@@ -870,6 +870,7 @@ form {
     text-align: center;
     gap: 25px;
     padding: 74px;
+    align-items: flex-start;
   }
 
   .about {
