@@ -974,10 +974,13 @@ form {
   text-align: left;
 }
 
+.justify {
+  text-align: justify;
+}
+
 .column {
   flex-direction: column;
 }
-
 
 .hide {
   display: none;
