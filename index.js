@@ -55,18 +55,18 @@ const workCards = [
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
+    title: 'DUO Budget',
     canopy: ['CANOPY', 'Back End Dev', '2015'],
     dot: './img/Counter.png',
     class: 'desk-content',
-    para1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    para2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    tech: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    imageMob: 'Images/Snapshoot2.png',
-    imageDesk: 'Images/Desktop2.png',
-    live: '#',
-    source: '#',
+    para1: 'Allows you to keep track of your expenses.',
+    description: 'Budget App is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what',
+    para2: 'DUO Budget is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    tech: ['Ruby on Rails', 'Ruby', 'Tailwind', 'PostgreSQL'],
+    imageMob: 'Images/projects/budget3.png',
+    imageDesk: 'Images/projects/budget3.png',
+    live: 'https://rails-0za3.onrender.com/',
+    source: 'https://github.com/danielochuba/budget-app',
   },
   {
     id: 3,
@@ -178,8 +178,8 @@ seeProject.forEach((item) => {
                 ${card[0].tech.map((it) => `<li class="skills">${it}</li>`).join('')}
                 </ul>
                 <div class="buttonPop">
-                  <a href="${card[0].live}" class="btn-text" name="1">See live <img class="imgButton" src="./live.png" alt="live" width="24"></a>
-                  <a href="${card[0].source}" class="btn-text" name="1">See Source <img class="imgButton" src="./IconGitHub.png" alt="IconGitHub" width="24"></a>
+                  <a href="${card[0].live}" target="_blank" class="btn-text" name="1">See live <img class="imgButton" src="./live.png" alt="live" width="24"></a>
+                  <a href="${card[0].source}" target="_blank" class="btn-text" name="1">See Source <img class="imgButton" src="./IconGitHub.png" alt="IconGitHub" width="24"></a>
                 </div>
               </div>
             </div>

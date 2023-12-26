@@ -459,6 +459,10 @@ header {
   width: 100%;
 }
 
+.portfolios {
+  width: 318px;
+}
+
 .skill-lang {
   display: flex;
   align-items: center;
