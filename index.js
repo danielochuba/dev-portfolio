@@ -41,7 +41,7 @@ const workCards = [
   {
     id: 1,
     title: 'House Booking',
-    canopy: ['CANOPY', 'Back End Dev', '2015'],
+    canopy: ['Render', 'Full-stack Dev', '2023'],
     dot: './img/Counter.png',
     class: 'section-label',
     para1: 'Add, book and delete Houses of your choice.',
@@ -56,7 +56,7 @@ const workCards = [
   {
     id: 2,
     title: 'DUO Budget',
-    canopy: ['CANOPY', 'Back End Dev', '2015'],
+    canopy: ['Render', 'Full-stack Dev', '2023'],
     dot: './img/Counter.png',
     class: 'desk-content',
     para1: 'Allows you to keep track of your expenses.',
