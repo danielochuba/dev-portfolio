@@ -70,7 +70,7 @@ const workCards = [
   },
   {
     id: 3,
-    title: 'Tonic',
+    title: 'Space Travelers Hub',
     canopy: ['Netlify', 'Frontend Dev', '2023'],
     dot: './img/Counter.png',
     class: 'section-label',
