@@ -668,17 +668,21 @@ form {
 
   nav {
     padding: 0 143px 48px 143px;
+    width: 80%;
   }
 
   .nav-bar {
     background: #fff;
-    position: relative;
+    position: fixed;
     height: 70px;
-    padding: 20px;
+    padding: 20px 143px;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
+    z-index: 1000;
   }
 
   .hambug-menu {
@@ -707,6 +711,7 @@ form {
   .links > a {
     color: #091e42;
     text-decoration: dashed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .links > a:hover {
