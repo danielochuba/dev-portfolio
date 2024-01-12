@@ -98,6 +98,21 @@ const workCards = [
     live: 'https://danielochuba.me/conference-page/',
     source: 'https://github.com/danielochuba/conference-page',
   },
+  {
+    id: 5,
+    title: 'Movie DB',
+    canopy: ['Github', 'Frontend Dev', '2023'],
+    dot: './img/Counter.png',
+    class: 'desk-content',
+    para1: 'A conference web page which contains two pages (HOME and ABOUT).',
+    description: 'A conference web page which contains two pages (HOME and ABOUT), displays speakers along with there pictures, titles and achievements.',
+    para2: 'A conference web page which contains two pages (HOME and ABOUT), displays speakers along with there pictures, titles and achievements. ',
+    tech: ['HTML', 'CSS', 'JavaScript', 'Github', 'Bootstraps'],
+    imageMob: 'Images/projects/conference.png',
+    imageDesk: 'Images/projects/conference.png',
+    live: 'https://danielochuba.me/conference-page/',
+    source: 'https://github.com/danielochuba/conference-page',
+  },
 ];
 
 // HANDLES PROJECTS DISPLAY

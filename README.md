@@ -4,13 +4,9 @@
 
 <div align="center">
   
-  
-
   <h3><b>details-popup-window</b></h3>
 
 </div>
-
-
 
 # 📗 Table of Contents
 
@@ -28,11 +24,9 @@
 
 # 📖 [Portfolio: Daniel Ochuba] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+This Is my portfolio website where I showcase works, project, and social contacts, I equally wrote a brief description about myself.
 
-**[Portfolio: Daniel Ochuba]** is the first project of the Microverse Program, Which is the portfolio project, The enhanced mobile and Desktop version.
-
-## 🛠 Built With <a name="built-with"> HTML, CSS</a>
+## 🛠 Built With <a name="built-with"> HTML, CSS, JavaScript</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -47,9 +41,6 @@
   </ul>
   
 </details>
-
-
-
 
 ### Key Features <a name="key-features"></a>
 
@@ -96,20 +87,24 @@ In order to run this project you need:
     </li>
     <li>Open Git Bash.</li> 
     <li>Change the current working directory to the location where you want the cloned directory.</li>
-    <li>Type git clone, and then paste the URL you copied earlier.<br><code>$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</code></li>
+    <li>Type git clone, and then paste the URL you copied earlier.<br><code>$ git clone https://github.com/danielochuba/dev-portfolio</code></li>
     <li>Press Enter to create your local clone</li>
   </ol>
 
-### Install
-
-Install this project with:
-
-  sh Portfolio: set up mobile first install
 
 ### Usage
 
-To run the project, execute the following command:
-.code index.html
+Navigate to the project directory 
+
+  ```bash
+      cd dev-portfolio
+  ```
+
+Open code in Vs Code
+
+  ```bash
+      code .
+  ```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -124,7 +119,7 @@ To run the project, execute the following command:
 
 - GitHub: [@githubhandle](https://github.com/danielochuba)
 - Twitter: [@twitterhandle](https://twitter.com/ochuba_daniel)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/daniel-ochuba-614572238)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-ochuba-ugochukwu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
