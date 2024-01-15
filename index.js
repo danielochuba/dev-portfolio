@@ -100,7 +100,7 @@ const workCards = [
   },
   {
     id: 5,
-    title: 'Movie DB',
+    title: 'Conference Page',
     canopy: ['Github', 'Frontend Dev', '2023'],
     dot: './img/Counter.png',
     class: 'desk-content',
