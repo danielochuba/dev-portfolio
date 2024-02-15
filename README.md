@@ -58,7 +58,7 @@ This Is my portfolio website where I showcase works, project, and social contact
 
 
 
-- [Live Demo Link](https://danielochuba.github.io/dev-portfolio/)
+- [Live Demo Link](https://danielochuba.me/dev-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
