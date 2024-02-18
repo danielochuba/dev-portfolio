@@ -117,9 +117,9 @@ Open code in Vs Code
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/danielochuba)
-- Twitter: [@twitterhandle](https://twitter.com/ochuba_daniel)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-ochuba-ugochukwu)
+- GitHub: [@danielochuba](https://github.com/danielochuba)
+- Twitter: [@ochuba_daniel](https://twitter.com/ochuba_daniel)
+- LinkedIn: [Daniel Ochuba](https://www.linkedin.com/in/daniel-ochuba-ugochukwu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
