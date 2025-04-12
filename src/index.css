@@ -2,6 +2,59 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+@keyframes appearFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.showMenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #262626;
+  padding-top: 100px;
+  z-index: 10;
+  animation: appearFromBottom 0.3s ease-in-out forwards;
+}
+
 * {
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -94,11 +147,6 @@ body {
   cursor: pointer;
   border: none;
   background: none;
-}
-
-.closeIcon {
-  display: none !important;
-  color: #fff;
 }
 
 .closeIcon > img {
@@ -349,7 +397,7 @@ header {
 }
 
 .btn-text:hover {
-  background-color: #acb1dd;
+  background-color: #6070ff;
   color: #fff;
   transform: scale(1);
   border: none;
@@ -753,7 +801,7 @@ form {
   }
 
   .work-section {
-    gap: 142px;
+    gap: 40px;
   }
 
   .section-label {
